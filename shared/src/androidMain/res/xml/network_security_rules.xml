@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">jwxk.neu.edu.cn</domain>
+        <domain includeSubdomains="true">jwxt.neu.edu.cn</domain>
+        <domain includeSubdomains="true">ipgw.neu.edu.cn</domain>
+        <domain includeSubdomains="true">ip.neu.edu.cn</domain>
+    </domain-config>
+</network-security-config>

@@ -1,0 +1,4 @@
+interface:
+  display_name: "同步NEUPass开源提交"
+  short_description: "选择性迁移NEUPass闭源提交并过滤密钥、凭据与内部实现"
+  default_prompt: "使用 $sync-neupass-opensource-commit 将指定闭源提交脱敏后迁移到开源分支。"

@@ -1,0 +1,120 @@
+/* 隐藏系统标题、第二行导航、标签导航和导航栏折叠按钮 */
+[class*="navBarRoot___"] [class*="titleContainer___"],
+[class*="navBarSecondLine___"],
+[class*="tabNavRoot___"],
+[class*="foldButtonWrapper___"] {
+    display: none !important;
+}
+
+/* 去除导航栏多余边距 */
+div[class*="navBarFirstLine___"] {
+    padding: 0 !important;
+}
+div[class*="tabPanelRoot___"] {
+    margin-top: 0 !important;
+}
+
+/* 左侧导航占据剩余宽度，让站点按可用空间计算折叠菜单 */
+[class*="navBarRoot___"] [class*="navBarFirstLine___"] [class*="regionContainer___"] {
+    flex: 1;
+    min-width: 0;
+    width: 0;
+    padding: 0 12px;
+}
+
+/* 用户身份菜单按内容占宽并靠右，不挤占左侧导航空间 */
+[class*="navBarRoot___"] [class*="navBarFirstLine___"] [class*="rightContainer___"] {
+    flex: 0 0 auto;
+    min-width: 0;
+    justify-content: flex-end;
+}
+
+/* 隐藏搜索框、换肤按钮和学生身份下拉框 */
+[class*="navBarFirstLine___"] [class*="searchContainer___"],
+[class*="navBarFirstLine___"] [class*="themeIconContainer___"],
+[class*="navBarFirstLine___"] [class*="changeUserGroupRoot___"] {
+    display: none !important;
+}
+
+/* 保持头像、姓名和学号的完整宽度 */
+[class*="navBarFirstLine___"] [class*="userInfoRoot___"] {
+    flex-shrink: 0;
+}
+
+/* 隐藏业务页面底部版权页脚 */
+[class*="footerWrapper___"] > [class*="footer___"] {
+    display: none !important;
+}
+
+/* --- 首页 --- */
+
+/* 隐藏首页机器人脑袋 */
+[class*="indexContainer___"] > [class*="wrapper___"] [class*="wrapperHeader___"] div[class*="icon___"] {
+    display: none;
+}
+
+/* 解除桌面端的1366px最小宽度，让页面适应手机视口 */
+body {
+    min-width: 0;
+}
+
+/* 首页卡片改为单列网格，高度随内容展开 */
+[class*="indexContainer___"] > [class*="wrapper___"] [class*="moduleContainer___"] {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    height: auto !important;
+}
+
+/* 展开左右栏及学业状态所在的嵌套容器，让卡片参与同一网格排序 */
+[class*="indexContainer___"] > [class*="wrapper___"] [class*="leftPart___"],
+[class*="indexContainer___"] > [class*="wrapper___"] [class*="rightPart___"],
+[class*="indexContainer___"] > [class*="wrapper___"] [class*="leftPart___"] > [class*="container___"]:has(> [class*="container___"] > [class*="timeLineWapper___"]) {
+    display: contents !important;
+}
+
+/* 隐藏原有分隔条及底部“成绩／考试安排／课程／课表”标签卡片 */
+[class*="indexContainer___"] > [class*="wrapper___"] [class*="horizontalSeparator___"],
+[class*="indexContainer___"] > [class*="wrapper___"] [class*="verticalSeparator___"],
+[class*="indexContainer___"] > [class*="wrapper___"] [class*="container___"]:has(> [class*="tabContentContainer___"]) {
+    display: none;
+}
+
+/* 1. 我的申请 */
+[class*="indexContainer___"] > [class*="wrapper___"] [class*="todoModuleRoot___"] {
+    order: 1;
+}
+
+/* 隐藏“我的申请”列表中的占位图片 */
+[class*="todoModuleRoot___"] [class*="listPanel___"] img {
+    display: none;
+}
+
+/* 2. 学业状态：取消固定宽度和右侧栏间距 */
+[class*="indexContainer___"] > [class*="wrapper___"] [class*="leftPart___"] > [class*="container___"] > [class*="container___"]:has(> [class*="header___"]) {
+    order: 2;
+    width: auto;
+    margin-right: 0;
+}
+
+/* 3. 我的应用 */
+[class*="indexContainer___"] > [class*="wrapper___"] [class*="rightPart___"] > [class*="container___"]:has(> [class*="appsContainer___"]) {
+    order: 3;
+}
+
+/* 4. 公告消息情况：排序对象是公告卡片外层的无类名容器 */
+[class*="indexContainer___"] > [class*="wrapper___"] [class*="rightPart___"] > div:has(> [class*="bulletinModuleRoot___"]) {
+    order: 4;
+}
+
+/* 5. 学习日程：解除桌面端的零高度，由日历内容撑开卡片 */
+[class*="indexContainer___"] > [class*="wrapper___"] [class*="rightPart___"] > [class*="cardWrapper___"] {
+    order: 5;
+    height: auto;
+}
+
+/* 6. 学业生涯导航：不再继承原双栏容器的整行高度 */
+[class*="indexContainer___"] > [class*="wrapper___"] [class*="container___"]:has(> [class*="timeLineWapper___"]) {
+    order: 6;
+    height: auto;
+}

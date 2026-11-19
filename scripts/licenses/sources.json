@@ -1,0 +1,317 @@
+{
+  "verifiedVersions": {
+    "com.tencent.kuiklybase:resource-core": "0.0.1-neupass.21",
+    "com.tencent.kuiklybase:resource-compose": "0.0.1-neupass.21",
+    "com.tencent:mmkv": "2.4.2",
+    "org.jetbrains.skiko:skiko-awt": "0.9.37.4",
+    "io.github.kdroidfilter:composewebview": "1.0.0-beta-02",
+    "io.github.kdroidfilter:wrywebview": "1.0.0-beta-02-neupass.1"
+  },
+  "rustOverrides": {
+    "fxhash": {
+      "licenses": ["Apache-2.0"],
+      "notices": [
+        "Copyright 2015 The Rust Project Developers.",
+        "fxhash 0.2.1的lib.rs声明可选择Apache-2.0或MIT；此处分发采用Apache-2.0。"
+      ]
+    },
+    "mac": {
+      "licenses": ["Apache-2.0"],
+      "notices": [
+        "Jonathan Reem <jonathan.reem@gmail.com>",
+        "mac 0.1.1的Cargo.toml及README声明MIT/Apache-2.0双许可；此处分发采用Apache-2.0。"
+      ]
+    }
+  },
+  "licenseTexts": {
+    "638fd18a30bcfe50f8dcec1791793bd0": {
+      "name": "Tencent Binary License",
+      "url": "https://raw.githubusercontent.com/TencentBrowsingService/TBS_SDK/master/LICENSE.txt"
+    },
+    "a953261c1ab0a39c092979a5ef28d565": {
+      "name": "Unicode License V3及ICU第三方告知",
+      "url": "https://raw.githubusercontent.com/unicode-org/icu/release-77-1/LICENSE"
+    },
+    "GPL-2.0-CPE": {
+      "name": "GPL-2.0 with Classpath Exception",
+      "url": "https://raw.githubusercontent.com/google/desugar_jdk_libs/master/LICENSE"
+    },
+    "KmmResource": {
+      "name": "KuiklyBase / KmmResource许可证与第三方告知",
+      "url": "https://raw.githubusercontent.com/chiyuki0325/KmmResource/4d4872a/LICENSE"
+    }
+  },
+  "overrides": [
+    {
+      "prefix": "com.github.ajalt.colormath:",
+      "licenses": [],
+      "sources": [
+        {
+          "name": "colormath MIT License",
+          "url": "https://raw.githubusercontent.com/ajalt/colormath/3.6.1/LICENSE"
+        }
+      ]
+    },
+    {
+      "prefix": "com.materialkolor:",
+      "licenses": ["Apache-2.0"],
+      "sources": [
+        {
+          "name": "MaterialKolor MIT License",
+          "url": "https://raw.githubusercontent.com/jordond/materialkolor/4.0.5/LICENSE"
+        }
+      ]
+    },
+    {
+      "prefix": "io.github.darkokoa:",
+      "licenses": [],
+      "sources": [
+        {
+          "name": "pangu.kt MIT License",
+          "url": "https://raw.githubusercontent.com/darkokoa/pangu.kt/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "prefix": "org.slf4j:",
+      "licenses": [],
+      "sources": [
+        {
+          "name": "SLF4J MIT License",
+          "url": "https://raw.githubusercontent.com/qos-ch/slf4j/v_{version}/LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "prefix": "com.tencent:mmkv",
+      "licenses": [],
+      "sources": [
+        {
+          "name": "MMKV BSD-3-Clause及第三方许可证",
+          "url": "https://raw.githubusercontent.com/Tencent/MMKV/v2.4.2/LICENSE.TXT"
+        }
+      ]
+    },
+    {
+      "prefix": "com.android.tools:desugar_jdk_libs_configuration",
+      "licenses": [],
+      "sources": [
+        {
+          "name": "R8 BSD License",
+          "url": "https://r8.googlesource.com/r8/+/refs/heads/main/LICENSE?format=TEXT",
+          "base64": true
+        }
+      ]
+    },
+    {
+      "prefix": "com.tencent.kuiklybase:",
+      "website": "https://github.com/chiyuki0325/KmmResource",
+      "licenses": ["KmmResource"],
+      "sources": [
+        {
+          "name": "KmmResource NOTICE",
+          "url": "https://raw.githubusercontent.com/chiyuki0325/KmmResource/4d4872a/NOTICE"
+        }
+      ]
+    },
+    {
+      "prefix": "com.ctrip.flight.mmkv:",
+      "website": "https://github.com/chiyuki0325/mmkv-kotlin"
+    },
+    {
+      "prefix": "io.github.kdroidfilter:",
+      "website": "https://github.com/NucleusFramework/ComposeNativeWebview/tree/v1.0.0-beta-02",
+      "licenses": ["Apache-2.0"],
+      "sources": [
+        {
+          "name": "ComposeNativeWebview Apache License 2.0",
+          "url": "https://raw.githubusercontent.com/NucleusFramework/ComposeNativeWebview/58314a9dc161a9892a5ecc2b2c0b3a593217c258/LICENSE"
+        }
+      ]
+    },
+    {
+      "prefix": "org.jetbrains.skiko:",
+      "sources": [
+        {
+          "name": "Skiko NOTICE",
+          "url": "https://raw.githubusercontent.com/JetBrains/skiko/v0.9.37.4/NOTICE"
+        }
+      ]
+    }
+  ],
+  "libraries": [
+    {
+      "uniqueId": "native:mmkv",
+      "name": "MMKV原生核心",
+      "artifactVersion": "2.4.2",
+      "website": "https://github.com/Tencent/MMKV/tree/v2.4.2",
+      "description": "Android、Desktop及Apple平台使用的MMKV核心。包含上游完整许可证及第三方告知。",
+      "sources": [
+        {
+          "name": "MMKV BSD-3-Clause及第三方许可证",
+          "url": "https://raw.githubusercontent.com/Tencent/MMKV/v2.4.2/LICENSE.TXT"
+        }
+      ]
+    },
+    {
+      "uniqueId": "source:mmkv-kotlin",
+      "name": "mmkv-kotlin（NEUPass维护版）",
+      "artifactVersion": "1.3.2-neupass.11",
+      "website": "https://github.com/chiyuki0325/mmkv-kotlin",
+      "description": "Desktop与Apple源码构建使用的跨平台MMKV封装；原生核心另见MMKV条目。",
+      "sources": [
+        {
+          "name": "mmkv-kotlin Apache License 2.0",
+          "url": "https://raw.githubusercontent.com/chiyuki0325/mmkv-kotlin/1.3.2-neupass.11/LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "uniqueId": "native:skia",
+      "name": "Skia及内置组件",
+      "artifactVersion": "m138-80d088a-1（Skiko 0.9.37.4）",
+      "website": "https://github.com/JetBrains/skia/tree/80d088a",
+      "description": "Skiko使用的Skia预编译版本。下列告知包含Skia、SkCMS、字体、图像解码和着色器相关组件。",
+      "notices": [
+        "This software uses the FreeType Project (https://freetype.org/).",
+        "This software is based in part on the work of the Independent JPEG Group."
+      ],
+      "sources": [
+        {
+          "name": "Skia BSD-3-Clause",
+          "url": "https://raw.githubusercontent.com/JetBrains/skia/80d088a/LICENSE"
+        },
+        {
+          "name": "Vulkan Headers",
+          "url": "https://github.com/JetBrains/skia-pack/releases/download/m138-80d088a-1/Skia-m138-80d088a-1-linux-Release-arm64.zip",
+          "member": "include/third_party/vulkan/LICENSE"
+        },
+        {
+          "name": "ANGLE",
+          "url": "https://github.com/JetBrains/skia-pack/releases/download/m138-80d088a-1/Skia-m138-80d088a-1-linux-Release-arm64.zip",
+          "member": "third_party/externals/angle2/LICENSE"
+        },
+        {
+          "name": "libpng",
+          "url": "https://github.com/JetBrains/skia-pack/releases/download/m138-80d088a-1/Skia-m138-80d088a-1-linux-Release-arm64.zip",
+          "member": "third_party/externals/libpng/LICENSE"
+        },
+        {
+          "name": "libwebp",
+          "url": "https://github.com/JetBrains/skia-pack/releases/download/m138-80d088a-1/Skia-m138-80d088a-1-linux-Release-arm64.zip",
+          "member": "third_party/externals/libwebp/COPYING"
+        },
+        {
+          "name": "HarfBuzz",
+          "url": "https://github.com/JetBrains/skia-pack/releases/download/m138-80d088a-1/Skia-m138-80d088a-1-linux-Release-arm64.zip",
+          "member": "third_party/externals/harfbuzz/COPYING"
+        },
+        {
+          "name": "SwiftShader",
+          "url": "https://github.com/JetBrains/skia-pack/releases/download/m138-80d088a-1/Skia-m138-80d088a-1-linux-Release-arm64.zip",
+          "member": "third_party/externals/swiftshader/LICENSE.txt"
+        },
+        {
+          "name": "zlib",
+          "url": "https://github.com/JetBrains/skia-pack/releases/download/m138-80d088a-1/Skia-m138-80d088a-1-linux-Release-arm64.zip",
+          "member": "third_party/externals/zlib/LICENSE"
+        },
+        {
+          "name": "FreeType FTL",
+          "url": "https://chromium.googlesource.com/chromium/src/third_party/freetype2/+/702e4a1d32e4b911e85cc7df84b3ba395c28dab3/docs/FTL.TXT?format=TEXT",
+          "base64": true
+        },
+        {
+          "name": "FreeType第三方告知",
+          "url": "https://chromium.googlesource.com/chromium/src/third_party/freetype2/+/702e4a1d32e4b911e85cc7df84b3ba395c28dab3/LICENSE.TXT?format=TEXT",
+          "base64": true
+        },
+        {
+          "name": "ICU及第三方告知",
+          "url": "https://chromium.googlesource.com/chromium/deps/icu/+/364118a1d9da24bb5b770ac3d762ac144d6da5a4/LICENSE?format=TEXT",
+          "base64": true
+        },
+        {
+          "name": "libjpeg-turbo第三方告知",
+          "url": "https://chromium.googlesource.com/chromium/deps/libjpeg_turbo/+/e14cbfaa85529d47f9f55b0f104a579c1061f9ad/LICENSE.md?format=TEXT",
+          "base64": true
+        },
+        {
+          "name": "Independent JPEG Group",
+          "url": "https://chromium.googlesource.com/chromium/deps/libjpeg_turbo/+/e14cbfaa85529d47f9f55b0f104a579c1061f9ad/README.ijg?format=TEXT",
+          "base64": true
+        },
+        {
+          "name": "Expat",
+          "url": "https://chromium.googlesource.com/external/github.com/libexpat/libexpat/+/8e49998f003d693213b538ef765814c7d21abada/expat/COPYING?format=TEXT",
+          "base64": true
+        },
+        {
+          "name": "PIEX",
+          "url": "https://android.googlesource.com/platform/external/piex/+/bb217acdca1cc0c16b704669dd6f91a1b509c406/LICENSE?format=TEXT",
+          "base64": true
+        },
+        {
+          "name": "Wuffs",
+          "url": "https://skia.googlesource.com/external/github.com/google/wuffs-mirror-release-c/+/e3f919ccfe3ef542cfc983a82146070258fb57f8/LICENSE?format=TEXT",
+          "base64": true
+        },
+        {
+          "name": "Adobe DNG SDK",
+          "url": "https://android.googlesource.com/platform/external/dng_sdk/+/dbe0a676450d9b8c71bf00688bb306409b779e90/LICENSE?format=TEXT",
+          "base64": true
+        }
+      ]
+    },
+    {
+      "uniqueId": "assets:fluent-system-icons",
+      "name": "Fluent UI System Icons",
+      "website": "https://github.com/microsoft/fluentui-system-icons",
+      "description": "应用界面使用的Fluent系统图标。",
+      "sources": [
+        {
+          "name": "Fluent UI System Icons MIT License",
+          "url": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/main/LICENSE"
+        }
+      ]
+    },
+    {
+      "uniqueId": "assets:font-awesome-golang",
+      "name": "Font Awesome Golang图标",
+      "website": "https://github.com/FortAwesome/Font-Awesome",
+      "description": "ic_golang.svg使用Font Awesome的Golang品牌图标，应用内调整了SVG格式、坐标小数精度及填充色。",
+      "notices": ["Copyright 2024 Fonticons, Inc."],
+      "sources": [
+        {
+          "name": "Font Awesome Free许可说明",
+          "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.7.2/LICENSE.txt"
+        },
+        {
+          "name": "Creative Commons Attribution 4.0 International",
+          "url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt"
+        }
+      ]
+    },
+    {
+      "uniqueId": "assets:roboto",
+      "name": "Roboto数字字体",
+      "artifactVersion": "3.009，数字子集",
+      "website": "https://github.com/googlefonts/roboto-classic",
+      "description": "roboto_numeric.ttf的内嵌许可为SIL Open Font License 1.1；应用分发的是裁剪后的数字字形。",
+      "sources": [
+        {
+          "name": "Roboto SIL Open Font License 1.1",
+          "url": "https://raw.githubusercontent.com/googlefonts/roboto-classic/main/OFL.txt"
+        }
+      ]
+    },
+    {
+      "uniqueId": "ios:ktor-client-darwin",
+      "name": "Ktor Darwin Client",
+      "artifactVersion": "3.3.3-1.1.0-04",
+      "website": "https://github.com/ktorio/ktor",
+      "description": "Apple平台使用的Ktor网络引擎。",
+      "licenses": ["Apache-2.0"]
+    }
+  ]
+}
